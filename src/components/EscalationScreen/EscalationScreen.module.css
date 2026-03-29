@@ -1,0 +1,77 @@
+.screen {
+  background: var(--black);
+  gap: 2rem;
+  animation: escalationFlash 0.2s ease;
+}
+
+@keyframes escalationFlash {
+  0% { background: #330000; }
+  50% { background: var(--black); }
+  100% { background: var(--black); }
+}
+
+.level {
+  font-size: 0.55rem;
+  letter-spacing: 0.4em;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.message {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 7vw, 5rem);
+  letter-spacing: 0.08em;
+  text-align: center;
+  line-height: 1.05;
+  color: var(--white);
+  max-width: 500px;
+}
+
+.level2 {
+  color: var(--yellow);
+}
+
+.level3 {
+  color: var(--red);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: min(380px, 92vw);
+}
+
+.startButton {
+  width: 100%;
+  height: 68px;
+  background: var(--white);
+  color: var(--black);
+  border: none;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.startButton:hover {
+  background: var(--yellow);
+}
+
+.ignoreButton {
+  background: none;
+  border: none;
+  color: #333333;
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  transition: color 0.12s ease;
+}
+
+.ignoreButton:hover {
+  color: #555555;
+}

@@ -1,0 +1,71 @@
+.screen {
+  background: var(--red);
+  gap: 2rem;
+  animation: flash 0.3s ease;
+}
+
+@keyframes flash {
+  0% { background: #ffffff; }
+  30% { background: var(--red); }
+  60% { background: #ffffff; }
+  100% { background: var(--red); }
+}
+
+.top {
+  font-size: 1rem;
+  letter-spacing: 0.4em;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+.line1,
+.line2,
+.line3 {
+  font-family: var(--font-display);
+  text-align: center;
+}
+
+.line1 {
+  font-size: clamp(1.6rem, 5vw, 3rem);
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  color: var(--white);
+}
+
+.line2 {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  letter-spacing: 0.1em;
+  line-height: 1;
+  color: var(--yellow);
+  text-shadow: 0 0 40px rgba(245, 197, 24, 0.4);
+}
+
+.line3 {
+  font-size: clamp(1.4rem, 4vw, 2.4rem);
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.divider {
+  width: 80px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nextButton {
+  margin-top: 1rem;
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: var(--white);
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  padding: 0.9rem 2.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.15s ease;
+}
+
+.nextButton:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+}

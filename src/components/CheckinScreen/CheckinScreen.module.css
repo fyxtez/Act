@@ -1,0 +1,67 @@
+.screen {
+  background: var(--black);
+  gap: 2.5rem;
+  animation: checkinFlash 0.2s ease;
+}
+
+@keyframes checkinFlash {
+  0% { background: #ffffff; }
+  40% { background: var(--black); }
+  70% { background: #1a0000; }
+  100% { background: var(--black); }
+}
+
+.sub {
+  font-size: 0.55rem;
+  letter-spacing: 0.35em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.question {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 6rem);
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1;
+  color: var(--white);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  width: min(380px, 92vw);
+}
+
+.yesButton,
+.noButton {
+  flex: 1;
+  height: 80px;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.yesButton {
+  background: #0d2912;
+  border: 2px solid #2a7a35;
+  color: #4ccc5e;
+}
+
+.yesButton:hover {
+  background: #12391a;
+  border-color: #4ccc5e;
+}
+
+.noButton {
+  background: #250806;
+  border: 2px solid #6b1005;
+  color: var(--red);
+}
+
+.noButton:hover {
+  background: #350b08;
+  border-color: var(--red);
+}

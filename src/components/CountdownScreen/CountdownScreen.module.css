@@ -1,0 +1,87 @@
+.screen {
+  background: var(--black);
+  gap: 1.5rem;
+}
+
+.label {
+  font-size: 1rem;
+  letter-spacing: 0.35em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.timer {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 18vw, 10rem);
+  letter-spacing: 0.05em;
+  line-height: 1;
+  color: var(--white);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.warning {
+  color: var(--red);
+  animation: pulseText 1s infinite;
+}
+
+@keyframes pulseText {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.progressTrack {
+  width: min(380px, 92vw);
+  height: 3px;
+  background: #222222;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBar {
+  position: absolute;
+  inset: 0;
+  background: var(--red);
+  transform-origin: left;
+  transition: transform 1s linear;
+}
+
+.reminders {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: min(380px, 92vw);
+  margin-top: 0.5rem;
+}
+
+.reminderItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--red);
+  flex-shrink: 0;
+}
+
+.actionTaken {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.actionTaken span {
+  color: var(--yellow);
+}

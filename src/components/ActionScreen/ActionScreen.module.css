@@ -1,0 +1,49 @@
+.screen {
+  background: var(--black);
+  gap: 1rem;
+  text-align: center;
+}
+
+.label {
+  font-size: 1rem;
+  letter-spacing: 0.35em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 6.5rem);
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-align: center;
+  color: var(--yellow);
+  text-shadow: 0 0 40px rgba(245, 197, 24, 0.3);
+}
+
+.subtitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  letter-spacing: 0.2em;
+  color: rgba(240, 236, 227, 0.5);
+  margin: 1.5rem 0 2.5rem;
+}
+
+.button {
+  width: min(340px, 90vw);
+  height: 80px;
+  background: var(--white);
+  color: var(--black);
+  border: none;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+  transition: background 0.12s ease;
+}
+
+.button:hover {
+  background: var(--yellow);
+}
